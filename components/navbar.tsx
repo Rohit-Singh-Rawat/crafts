@@ -15,7 +15,7 @@ export function Navbar() {
 				initial={{ y: -100 }}
 				animate={{ y: 0 }}
 				transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-				className='bg-black/30 backdrop-blur-md border rounded-3xl md:rounded-full border-zinc-800 container mx-auto max-w-5xl'
+				className='bg-black/30 backdrop-blur-md border rounded-3xl md:rounded-full border-zinc-800/50 container mx-auto max-w-5xl'
 			>
 				<div className='container mx-auto px-2 sm:px-4'>
 					<div className='flex items-center justify-between h-14 sm:h-16'>
@@ -86,7 +86,7 @@ export function Navbar() {
 							))}
 							<Button
 								variant='ghost'
-								className='w-full hover:bg-white/70 bg-white rounded-3xl mt-4'
+								className='w-full hover:bg-white/70 bg-white rounded-3xl mt-4 shadow-inner shadow-black'
 								onClick={() => setIsMenuOpen(false)}
 							>
 								Contact Us

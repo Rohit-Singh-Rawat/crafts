@@ -121,35 +121,38 @@ export function HeroSection({
 								</div>
 							</Link>
 
-							<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-tight text-balance mb-4 sm:mb-6 text-zinc-100'>
+							<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-tight text-balance mb-4 sm:mb-6 text-zinc-100 text-shadow-3xl'>
 								{title}
 							</h1>
 
-							<p className='text-zinc-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10'>
+							<p className='text-zinc-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 text-shadow-sm'>
 								{description}
 							</p>
 
-							<div className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center'>
-								<div className='bg-zinc-400/10 rounded-[14px] border border-zinc-800/60 p-0.5 w-fit'>
+							<div className='flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center'>
+
 									<Button
 										asChild
 										size='lg'
-										className='rounded-xl px-4 sm:px-5 text-sm sm:text-base bg-zinc-700/50 hover:bg-zinc-700/50 text-zinc-100 backdrop-blur-sm'
+										className='group rounded-full px-6 sm:px-8 text-sm sm:text-base bg-white hover:bg-zinc-50 text-zinc-900 transition-all duration-300 relative overflow-hidden border border-[#000000]/25 shadow-[inset_0_2px_4px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(0,0,0,0.12),inset_0_-1px_2px_rgba(0,0,0,0.08)] hover:scale-105'
 									>
 										<Link href='#'>
-											<span className='text-nowrap'>{primaryCTA}</span>
+											<span className='text-nowrap font-medium relative z-10'>
+												{primaryCTA}
+											</span>
+											<div className='absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
 										</Link>
 									</Button>
-								</div>
+						
 
 								<Button
 									asChild
 									size='lg'
 									variant='ghost'
-									className='rounded-xl px-4 sm:px-5 text-sm sm:text-base text-zinc-100 py-3 sm:py-4'
+									className='rounded-full px-6 sm:px-8 text-sm sm:text-base text-zinc-100 py-3 sm:py-4 hover:bg-zinc-400/30 hover:text-zinc-200 transition-all duration-300 border border-zinc-400/80 '
 								>
 									<Link href='#'>
-										<span className='text-nowrap'>{secondaryCTA}</span>
+										<span className='text-nowrap font-medium'>{secondaryCTA}</span>
 									</Link>
 								</Button>
 							</div>

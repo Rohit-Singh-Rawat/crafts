@@ -20,7 +20,7 @@ export const plans: PricingPlan[] = [
 	},
 	{
 		title: 'Enterprise Pro',
-		price: 'From $3,999/mo',
+		price: '$3,999/mo',
 		description:
 			'Elevate your digital presence with a comprehensive, high-performance solution. Perfect for growing businesses that demand excellence and scalability.',
 		features: [
